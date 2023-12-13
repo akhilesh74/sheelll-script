@@ -8,3 +8,5 @@ then
 else
     echo "yau are in root"
 fi
+
+yum install mysql -y
