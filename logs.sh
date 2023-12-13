@@ -4,14 +4,17 @@ ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 VALIDATE (){
     if [ $1 -ne 0 ]
     then 
-        echo " $2 is failed"
+        echo " $2 is $R failed $N to install"
         exit 1
     else 
-        echo "$2 is successfully"
+        echo "$2 is $G successfully"
     fi
 
 }
