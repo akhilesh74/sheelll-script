@@ -40,6 +40,6 @@ do
         yum install $package -y $>> $LOGFILE#install the package
         VALIDATE $? " installation of $package"
     else 
-        echo " $package is alraedy installed $Y skipped $N"
+        echo -e " $package is alraedy installed $Y skipped $N"
     fi
 done
