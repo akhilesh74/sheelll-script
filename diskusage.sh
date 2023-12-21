@@ -15,3 +15,5 @@ do
 done <<< $DIST_USAGE
 
 echo -e "message : $message"
+
+echo -e "$message" | mail -s "high disk usage" akhileshakhi1993@gmail.com
